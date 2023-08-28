@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>주소 검색</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='./css/index.css') }}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='./js/index.js') }}"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="address-form">
+        <h1>주소 검색</h1>
+        <div class="form-container">
+          <div class="input-container">
+            <label>
+              Street:
+              <input type="text" name="street" id="street" />
+            </label>
+            <div id="suggested-addresses">
+              <ul id="suggested-addresses-list"></ul>
+            </div>
+          </div>
+          <label>
+            ZIP Code:
+            <input type="text" name="zipcode" id="zipcode" readonly />
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
