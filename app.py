@@ -32,8 +32,8 @@ def autocomplete():
         # 기타 필요한 매개변수들을 여기에 추가하세요.
 
         # https://us-autocomplete-pro.api.smarty.com/lookup?key=YOUR+EMBEDDED+KEY+HERE
-        # api_url = f"https://us-autocomplete-pro.api.smarty.com/lookup?search={search_term}&max_results={max_results}&key={api_key}"
-        api_url = f"https://us-autocomplete-pro.api.smarty.com/lookup?prefer_geolocation={search_term}&key={api_key}"
+        api_url = f"https://us-autocomplete-pro.api.smarty.com/lookup?search={search_term}&max_results={max_results}&key={api_key}"
+        # api_url = f"https://us-autocomplete-pro.api.smarty.com/lookup?prefer_geolocation={search_term}&key={api_key}"
 
         # 필수 HTTP 헤더 추가
         headers = {
