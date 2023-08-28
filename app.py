@@ -21,7 +21,7 @@ def build_address(suggestion):
 def autocomplete():
     try:
         # SmartyStreets API 키 (환경 변수 또는 직접 문자열로 입력)
-        api_key = "fdecf629-0a7c-2f8b-a254-88d0ebf14839"
+        api_key = "PA3jWIFFL3bS7ZEwz3ce"
 
         # 클라이언트에서 받은 검색어
         search_term = request.args.get("search", "")
